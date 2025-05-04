@@ -1,6 +1,8 @@
 # Favorites app
 
-*"Läslistan" är en webbsida där man kan välja ut sina favoriter från en katalog med böcker, eller lägga till nya. Beställaren är en organisation som vill öka barns och ungas läsande.*
+*“Läslistan” is a web application where users can build a personal reading list by selecting favorites from a book catalog or adding new books. The client is an organization aiming to promote reading among children and young people.*
 
-Webbsidan jag testar:  
+Website under test:
 https://tap-ht24-testverktyg.github.io/exam-template/
+
+
