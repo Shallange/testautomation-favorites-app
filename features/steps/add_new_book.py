@@ -8,17 +8,17 @@ def step_click_add_book(context):
     expect(add_book_button).to_be_enabled()
     add_book_button.click()
 
-@when('enters "The Alchemist" as the title')
-def step_enter_title(context):
+@when('enters "{title}" as the title')
+def step_enter_title(context, title):
     page = context.page
     title_input = page.get_by_test_id("add-input-title")
-    title_input.fill("The Alchemist")
+    title_input.fill(title)
 
-@when('enters "Paulo Coelho" as the author')
-def step_enter_author(context):
+@when('enters "{author}" as the author')
+def step_enter_author(context, author):
     page = context.page
     author_input = page.get_by_test_id("add-input-author")
-    author_input.fill("Paulo Coelho")
+    author_input.fill(author)
 
 @then('the "Lägg till ny bok" button should become enabled')
 def step_check_button_enabled(context):
@@ -32,9 +32,11 @@ def step_click_add_new_book(context):
     submit_button = page.get_by_test_id("add-submit")
     submit_button.click()
 
-@then('the book "The Alchemist" should appear in the "Katalog" tab')
-def step_book_should_appear(context):
+@then('the book "{title}" should appear in the "Katalog" tab')
+def step_book_should_appear(context, title):
     page = context.page
     katalog_button = page.get_by_test_id("catalog")
     katalog_button.click()
-    expect(page.get_by_text("The Alchemist")).to_be_visible()
+    expect(page.get_by_text(title)).to_be_visible()
+
+

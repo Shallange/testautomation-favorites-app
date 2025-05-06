@@ -5,6 +5,7 @@
 - [A1.1] A form with fields for title and author is displayed.
 - [A1.2] The "Lägg till ny bok" button remains disabled until both fields are filled.
 - [A1.3] When I click "Lägg till ny bok", the book appears in the "Mina böcker" tab
+- [A1.4](Edge-case) A book added with only whitespace is still added
 
 ---
 ## [U2] As a user, I want to be able to favorite a book
