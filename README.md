@@ -6,3 +6,11 @@ Website under test:
 https://tap-ht24-testverktyg.github.io/exam-template/
 
 
+# What has been tested:
+- Adding a new book with a title and author:
+  - The submit button is only enabled when both fields are filled
+  - The new book appears in the "Katalog" tab
+<br>
+- Favoriting a book by clicking the heart icon on hover:
+  - The heart icon becomes visible on hover
+  - The favorited book appears in the "Mina böcker" tab
