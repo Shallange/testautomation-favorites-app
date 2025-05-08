@@ -20,7 +20,8 @@ https://tap-ht24-testverktyg.github.io/exam-template/
 - **Adding a new book with a title and author:**
   - The submit button is only enabled when both fields are filled
   - The new book appears in the "Katalog" tab
-
+  - (**Edge case**) Adding a book with only whitespace **should not** be allowed, but currently is.
+  The submit button becomes enabled, which it shouldn't. (**Note:** This scenario fails, revealing a missing input validation issue in the application.)
 <br>
 
 - **Favoriting a book by clicking the heart icon on hover:**
